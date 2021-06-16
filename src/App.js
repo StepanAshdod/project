@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Redirect, Route, Switch } from "react-router";
+import { ACCOUNT, LOCATION, MAIN_PATH, PRODUCT } from "./service/apiConsts";
+import { MainPage } from "./components/pages/MainPage/MainPage";
+import { Accounts } from "./components/pages/Accounts/Accounts";
+import { Locations } from "./components/pages/Locations/Locations";
+import { Products } from "./components/pages/Products/Products";
+import { PaperBase } from "./components/navigation/PaperBase";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    return (
+        <Switch>
+            <Route path={ "" } component={ PaperBase } exact/>
+            <Redirect to={ "/" + MAIN_PATH }/>
+        </Switch>
+    );
 }
-
 export default App;
+
