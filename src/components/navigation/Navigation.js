@@ -1,7 +1,6 @@
-import { navigationLinks } from "../../service/apiConsts";
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { ListItem } from "@material-ui/core";
+import {NavLink} from "react-router-dom";
+import {navigationLinks} from "../../service/apiConst";
 
 
 export const Navigation = () => {
@@ -10,13 +9,12 @@ export const Navigation = () => {
             { navigationLinks.map( ( item ) => (
                 <React.Fragment key={ item.path }>
                     <NavLink to={ item.path }>
-                        <ListItem button style={ {display: 'inline'} } key={ item.label }>
+                        <button button style={ {display: 'inline'} } key={ item.label }>
                             { item.label }
-                        </ListItem>
+                        </button>
                     </NavLink>
                 </React.Fragment>
             ) ) }
         </main>
     )
 }
-export default Navigation;

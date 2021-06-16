@@ -1,11 +1,9 @@
 import React from 'react';
-import { Redirect, Route, Switch } from "react-router";
-import { ACCOUNT, LOCATION, MAIN_PATH, PRODUCT } from "./service/apiConsts";
-import { MainPage } from "./components/pages/MainPage/MainPage";
-import { Accounts } from "./components/pages/Accounts/Accounts";
-import { Locations } from "./components/pages/Locations/Locations";
-import { Products } from "./components/pages/Products/Products";
+
 import { PaperBase } from "./components/navigation/PaperBase";
+import {MAIN_PATH} from "./service/apiConst";
+import { Route, Switch } from "react-router";
+import { Redirect } from "react-router-dom";
 
 export const App = () => {
     return (
@@ -15,5 +13,4 @@ export const App = () => {
         </Switch>
     );
 }
-export default App;
 

@@ -1,4 +1,3 @@
-import { Navigation } from "../navigation/Navigation";
 import React from "react";
 
 
@@ -9,4 +8,3 @@ export const Locations = () => {
         </main>
     )
 }
-export default Locations;

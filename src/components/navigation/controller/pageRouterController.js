@@ -1,9 +1,9 @@
-import { Redirect, Route, Switch } from "react-router";
-import { ACCOUNT, LOCATION, MAIN_PATH, PRODUCT } from "../../../service/apiConsts";
-import { MainPage } from "../../pages/MainPage/MainPage";
-import { Accounts } from "../../pages/Accounts/Accounts";
-import { Locations } from "../../pages/Locations/Locations";
-import { Products } from "../../pages/Products/Products";
+import {Redirect, Route, Switch} from "react-router";
+import {ACCOUNT, LOCATION, MAIN_PATH, PRODUCT} from "../../../service/apiConst";
+import {MainPage} from "../../pages/MainPage/MainPage";
+import {Accounts} from "../../pages/Accounts/Accounts";
+import {Products} from "../../pages/Products/Products";
+import {Locations} from "../../pages/Locations/Locations";
 
 
 export const pageRouter = () => {

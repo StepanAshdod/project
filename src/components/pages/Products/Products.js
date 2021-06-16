@@ -1,4 +1,3 @@
-import { Navigation } from "../navigation/Navigation";
 import React from "react";
 
 export const Products = () => {
@@ -8,4 +7,3 @@ export const Products = () => {
         </main>
     )
 }
-export default Products;
